@@ -1,4 +1,6 @@
-﻿import type { RequestOptions } from '@@/plugin-request/request';
+﻿// @ts-nocheck
+import { getToken } from '@/utils/token';
+import type { RequestOptions } from '@@/plugin-request/request';
 import type { RequestConfig } from '@umijs/max';
 import { message, notification } from 'antd';
 
@@ -19,6 +21,16 @@ interface ResponseStructure {
   showType?: ErrorShowType;
 }
 
+const { REACT_BACKEND_URL } = process.env;
+
+const headersBase = {
+  Accept: 'application/json',
+  'Content-Type': 'application/json',
+  'Access-Control-Allow-Credentials': true,
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': '*',
+};
+
 /**
  * @name 错误处理
  * pro 自带的错误处理， 可以在这里做自己的改动
@@ -28,7 +40,7 @@ export const errorConfig: RequestConfig = {
   // 错误处理： umi@3 的错误处理方案。
   errorConfig: {
     // 错误抛出
-    errorThrower: (res) => {
+    errorThrower: (res: unknown) => {
       const { success, data, errorCode, errorMessage, showType } =
         res as unknown as ResponseStructure;
       if (!success) {
@@ -87,21 +99,30 @@ export const errorConfig: RequestConfig = {
 
   // 请求拦截器
   requestInterceptors: [
-    (config: RequestOptions) => {
+    async (config: RequestOptions) => {
       // 拦截请求配置，进行个性化处理。
-      const url = config?.url?.concat('?token = 123');
-      return { ...config, url };
+      const localStorage = await getToken();
+      const { type, token } = localStorage || {};
+      const { headers: headersOriginal = [], url: urlOriginal = '' } = config || {};
+      const headers = {
+        ...headersOriginal,
+        ...headersBase,
+      };
+      if (type && token) headers.Authorization = `${type} ${token}`;
+
+      const url = `${REACT_BACKEND_URL}${urlOriginal}`;
+      return { ...config, headers, url };
     },
   ],
 
   // 响应拦截器
   responseInterceptors: [
-    (response) => {
+    (response: unknown) => {
       // 拦截响应数据，进行个性化处理
       const { data } = response as unknown as ResponseStructure;
 
       if (data?.success === false) {
-        message.error('请求失败！');
+        message.error('Error！');
       }
       return response;
     },

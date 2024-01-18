@@ -1,10 +1,10 @@
 module.exports = {
   'GET /api/currentUser': {
     data: {
-      name: 'Serati Ma',
+      name: 'Admin',
       avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
       userid: '00000001',
-      email: 'antdesign@alipay.com',
+      email: 'dev@corelab.com.br',
       signature: '海纳百川，有容乃大',
       title: '交互专家',
       group: '蚂蚁金服－某某某事业群－某某平台部－某某技术部－UED',
@@ -32,7 +32,7 @@ module.exports = {
       {
         key: 99,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
         name: 'TradeCode 99',
         owner: '曲丽丽',
@@ -46,7 +46,7 @@ module.exports = {
       {
         key: 98,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
         name: 'TradeCode 98',
         owner: '曲丽丽',
@@ -60,7 +60,7 @@ module.exports = {
       {
         key: 97,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
         name: 'TradeCode 97',
         owner: '曲丽丽',
@@ -74,7 +74,7 @@ module.exports = {
       {
         key: 96,
         disabled: true,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
         name: 'TradeCode 96',
         owner: '曲丽丽',
@@ -88,7 +88,7 @@ module.exports = {
       {
         key: 95,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
         name: 'TradeCode 95',
         owner: '曲丽丽',
@@ -102,7 +102,7 @@ module.exports = {
       {
         key: 94,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
         name: 'TradeCode 94',
         owner: '曲丽丽',
@@ -116,7 +116,7 @@ module.exports = {
       {
         key: 93,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
         name: 'TradeCode 93',
         owner: '曲丽丽',
@@ -130,7 +130,7 @@ module.exports = {
       {
         key: 92,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
         name: 'TradeCode 92',
         owner: '曲丽丽',
@@ -144,7 +144,7 @@ module.exports = {
       {
         key: 91,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
         name: 'TradeCode 91',
         owner: '曲丽丽',
@@ -158,7 +158,7 @@ module.exports = {
       {
         key: 90,
         disabled: true,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
         name: 'TradeCode 90',
         owner: '曲丽丽',
@@ -172,7 +172,7 @@ module.exports = {
       {
         key: 89,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
         name: 'TradeCode 89',
         owner: '曲丽丽',
@@ -186,7 +186,7 @@ module.exports = {
       {
         key: 88,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
         name: 'TradeCode 88',
         owner: '曲丽丽',
@@ -200,7 +200,7 @@ module.exports = {
       {
         key: 87,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
         name: 'TradeCode 87',
         owner: '曲丽丽',
@@ -214,7 +214,7 @@ module.exports = {
       {
         key: 86,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
         name: 'TradeCode 86',
         owner: '曲丽丽',
@@ -228,7 +228,7 @@ module.exports = {
       {
         key: 85,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
         name: 'TradeCode 85',
         owner: '曲丽丽',
@@ -242,7 +242,7 @@ module.exports = {
       {
         key: 84,
         disabled: true,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
         name: 'TradeCode 84',
         owner: '曲丽丽',
@@ -256,7 +256,7 @@ module.exports = {
       {
         key: 83,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
         name: 'TradeCode 83',
         owner: '曲丽丽',
@@ -270,7 +270,7 @@ module.exports = {
       {
         key: 82,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
         name: 'TradeCode 82',
         owner: '曲丽丽',
@@ -284,7 +284,7 @@ module.exports = {
       {
         key: 81,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
         name: 'TradeCode 81',
         owner: '曲丽丽',
@@ -298,7 +298,7 @@ module.exports = {
       {
         key: 80,
         disabled: false,
-        href: 'https://ant.design',
+        href: 'https://corelab',
         avatar: 'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
         name: 'TradeCode 80',
         owner: '曲丽丽',
@@ -315,10 +315,9 @@ module.exports = {
     pageSize: 20,
     current: 1,
   },
-  'POST /api/login/outLogin': { data: {}, success: true },
   'POST /api/login/account': {
     status: 'ok',
     type: 'account',
-    currentAuthority: 'admin',
+    currentAuthority: 'ADMIN',
   },
 };

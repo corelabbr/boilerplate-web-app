@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Ant Design Pro",
+    "title": "Corelab",
     "version": "1.0.0"
   },
   "servers": [
@@ -46,7 +46,7 @@
     "/api/login/captcha": {
       "post": {
         "description": "发送验证码",
-        "operationId": "getFakeCaptcha",
+        "operationId": "getCaptcha",
         "tags": ["login"],
         "parameters": [
           {
@@ -71,36 +71,6 @@
           }
         }
       }
-    },
-    "/api/login/outLogin": {
-      "post": {
-        "description": "登录接口",
-        "operationId": "outLogin",
-        "tags": ["login"],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          }
-        }
-      },
-      "x-swagger-router-controller": "api"
     },
     "/api/login/account": {
       "post": {

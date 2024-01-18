@@ -5,6 +5,8 @@ declare namespace API {
   type CurrentUser = {
     name?: string;
     avatar?: string;
+    picture?: string;
+    id?: string;
     userid?: string;
     email?: string;
     signature?: string;
@@ -15,6 +17,7 @@ declare namespace API {
     unreadCount?: number;
     country?: string;
     access?: string;
+    features?: any;
     geographic?: {
       province?: { label?: string; key?: string };
       city?: { label?: string; key?: string };
@@ -26,7 +29,13 @@ declare namespace API {
   type LoginResult = {
     status?: string;
     type?: string;
-    currentAuthority?: string;
+    code?: string;
+    data: {
+      currentAuthority?: string;
+      user?: any;
+      features?: any;
+    };
+    message?: string;
   };
 
   type PageParams = {

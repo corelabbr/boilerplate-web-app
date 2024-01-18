@@ -1,4 +1,5 @@
 import component from './pt-BR/component';
+import general from './pt-BR/general';
 import globalHeader from './pt-BR/globalHeader';
 import menu from './pt-BR/menu';
 import pages from './pt-BR/pages';
@@ -12,6 +13,7 @@ export default {
   'layout.user.link.privacy': 'política de privacidade',
   'layout.user.link.terms': 'termos de serviços',
   'app.preview.down.block': 'Download this page to your local project',
+  ...general,
   ...globalHeader,
   ...menu,
   ...settingDrawer,

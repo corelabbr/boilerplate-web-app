@@ -5,7 +5,7 @@ import defaultSettings from './defaultSettings';
 import proxy from './proxy';
 import routes from './routes';
 
-const { REACT_APP_ENV = 'dev' } = process.env;
+const { REACT_APP_ENV = 'dev', REACT_BACKEND_URL, npm_package_version } = process.env;
 
 export default defineConfig({
   /**
@@ -33,7 +33,7 @@ export default defineConfig({
   /**
    * @name 主题的配置
    * @description 虽然叫主题，但是其实只是 less 的变量设置
-   * @doc antd的主题设置 https://ant.design/docs/react/customize-theme-cn
+   * @doc antd的主题设置 https://corelab/docs/react/customize-theme-cn
    * @doc umi 的theme 配置 https://umijs.org/docs/api/config#theme
    */
   theme: {
@@ -76,7 +76,7 @@ export default defineConfig({
    * @name layout 插件
    * @doc https://umijs.org/docs/max/layout-menu
    */
-  title: 'Ant Design Pro',
+  title: 'Corelab',
   layout: {
     locale: true,
     ...defaultSettings,
@@ -95,8 +95,8 @@ export default defineConfig({
    * @doc https://umijs.org/docs/max/i18n
    */
   locale: {
-    // default zh-CN
-    default: 'zh-CN',
+    // default pt-BR
+    default: 'pt-BR',
     antd: true,
     // default true, when it is true, will use `navigator.language` overwrite default
     baseNavigator: true,
@@ -132,7 +132,7 @@ export default defineConfig({
   /**
    * @name openAPI 插件的配置
    * @description 基于 openapi 的规范生成serve 和mock，能减少很多样板代码
-   * @doc https://pro.ant.design/zh-cn/docs/openapi/
+   * @doc https://developers.corelab.com.br/docs/openapi/
    */
   openAPI: [
     {
@@ -153,4 +153,10 @@ export default defineConfig({
   },
   esbuildMinifyIIFE: true,
   requestRecord: {},
+  define: {
+    'process.env': {
+      npm_package_version,
+      REACT_BACKEND_URL,
+    },
+  },
 });

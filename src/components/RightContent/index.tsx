@@ -1,12 +1,12 @@
-import { QuestionCircleOutlined } from '@ant-design/icons';
+import { GlobalOutlined, QuestionCircleOutlined } from '@ant-design/icons';
 import { SelectLang as UmiSelectLang } from '@umijs/max';
-import React from 'react';
 
 export type SiderTheme = 'light' | 'dark';
 
 export const SelectLang = () => {
   return (
     <UmiSelectLang
+      icon={<GlobalOutlined />}
       style={{
         padding: 4,
       }}
@@ -22,7 +22,7 @@ export const Question = () => {
         height: 26,
       }}
       onClick={() => {
-        window.open('https://pro.ant.design/docs/getting-started');
+        window.open('https://developers.corelab.com.br/docs/getting-started');
       }}
     >
       <QuestionCircleOutlined />
